@@ -16,11 +16,32 @@ img {
   white-space: nowrap;
 }
 
+.offscreen {
+  position: absolute;
+  left: -1000px;
+}
+
 /* End Utility Classes */
 
 body {
   font-family: "Nunito", sans-serif;
   min-height: 100vh;
+
+  /* example 2 - linear gradient */
+  /* background-color: aliceblue;
+  background-image: url(../img/bubbles.png),
+    linear-gradient(to left, steelblue, #fff);
+  background-repeat: repeat-y, no-repeat;
+  background-position: right center;
+  background-size: 20%, auto; */
+}
+
+.container {
+  background-color: rgb(251, 210, 156);
+  background-image: url(../img/map-2176x1451.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .hero {
@@ -30,10 +51,15 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
+  background-color: hsla(0, 0%, 0%, 0.418);
 }
 
 .h1 {
   font-size: 500%;
+  color: #fff;
+  text-shadow: 2px 2px 5px #000;
+  /* padding: 0.25rem;
+  border-radius: 10px; */
 }
 
 .profile-pic-figure {
@@ -44,7 +70,7 @@ body {
   width: 100%;
   height: auto;
   min-width: 100px;
-  border: 5px double gray;
+  border: 5px double #000;
   border-radius: 50%;
 }
 
